@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import user1 from "../assets/img/user1.png"; // Replace with your user images
 import user2 from "../assets/img/user2.png";
 import user3 from "../assets/img/user3.png";
-import '../assets/css/WordPressService.css';
+import '../assets/css/wordpressservice.css';
 
 const WordPressService = () => {
     return (
