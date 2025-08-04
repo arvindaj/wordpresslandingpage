@@ -1,0 +1,23 @@
+.line3 {
+    width: 68%;
+    height: 0.5px;
+    background: #45454542;
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+    top: 73px;
+}
+
+.vr {
+    background: #45454544;
+}
+
+.let-talk {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 15%;
+    letter-spacing: 1px;
+
+}

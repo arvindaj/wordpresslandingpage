@@ -1,0 +1,26 @@
+.line5 {
+    width: 15%;
+    height: 1.5px;
+    background: #454545;
+    position: absolute;
+    left: 380px;
+    bottom: 150px;
+}
+
+.badge {
+    background: linear-gradient(90deg, #8FDC24 0%, #A3FF1E 100%);
+}
+
+.badge1 {
+    background: linear-gradient(90deg, #F6FAF0 0%, #DADBD9 100%);
+}
+
+.womanpic {
+    position: absolute;
+    top: -10%;
+    scale: calc(0.9);
+}
+.ctabutton{
+    background: linear-gradient(180deg, #6A6969 0%, #333333 100%);
+
+}
