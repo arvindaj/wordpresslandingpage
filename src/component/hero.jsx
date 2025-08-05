@@ -28,16 +28,22 @@ const HeroSection = () => {
                     {/* Left Side - Content */}
                     <div className="col-lg-5 col-md-6 order-2 order-md-1 px-4 px-lg-5">
                         <div className="hero-content mx-5 px-0">
-                            {/* Green Badge */}
-                            <div className="mb-4">
-                                <span className="badge px-4 py-2 text-dark fw-semibold" style={{
-
-                                    borderRadius: '25px',
-                                    fontSize: '20px'
-                                }}>
+                            {/* Green Badge */} 
+                            <div className="mb-4 text-center text-md-start">
+                                <span
+                                    className="px-4 py-2 fw-semibold d-inline-block"
+                                    style={{
+                                        background: "linear-gradient(90deg, #8FDC24 0%, #A3FF1E 100%)",
+                                        borderRadius: "25px",
+                                        fontSize: "18px",
+                                        color: "#161718",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
                                     Make Your Business Idea
                                 </span>
                             </div>
+
 
                             {/* Main Heading */}
                             <h1 className="display-1 fw-bold mb-4" style={{ lineHeight: '1.2' }}>
@@ -45,25 +51,23 @@ const HeroSection = () => {
                             </h1>
                             <h2>
                                 <span style={{ color: '#666' }}>Never End In </span>
-                                <span style={{ color: '#9ccc65' }}>WordPress</span>
+                                <span style={{ color: '#8FDC24' }}>WordPress</span>
                                 <br />
                                 <span style={{ color: '#666' }}>Website Development</span>
                             </h2>
                             {/* Recognition Section */}
-                            <div className="col-12 col-lg-6">
-                                <h5 className="fw-bold text-center text-sm-start">
+                            <div className="col-12 col-lg-12 mt-4">
+                                <h5 className="fw-bold text-center text-md-start mb-3">
                                     Recognized By
                                 </h5>
-                                <div className="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3">
 
-                                    <div className="line5 d-none d-sm-block"></div>
-                                    <div className="d-flex gap-2">
-                                        <img src={r1} alt="R1" height="50" />
-                                        <img src={r2} alt="R2" height="50" />
-                                        <img src={r3} alt="R3" height="50" />
-                                    </div>
+                                <div className="col-lg-12 text-center">
+                                    <img src={r1} alt="R1" className="img-fluid" style={{ maxHeight: '35px' }} />
+                                    <img src={r2} alt="R2" className="img-fluid" style={{ maxHeight: '40px' }} />
+                                    <img src={r3} alt="R3" className="img-fluid" style={{ maxHeight: '40px' }} />
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -76,7 +80,7 @@ const HeroSection = () => {
                                     src={womanhero}
                                     alt="womanhero"
                                     className="me-0 womanpic"
-                                    style={{transform: 'rotate(15deg)',}}
+                                    style={{ transform: 'rotate(15deg)', }}
                                 />
                             </div>
                         </div>
@@ -102,7 +106,7 @@ const HeroSection = () => {
 
                             <h3 className="h4 mb-3">
                                 <span style={{ color: '#666' }}>WordPress </span>
-                                <span style={{ color: '#9ccc65' }}>Development</span>
+                                <span style={{ color: '#8FDC24' }}>Development</span>
                                 <br />
                                 <span style={{ color: '#666' }}>Service Company</span>
                             </h3>
@@ -119,7 +123,7 @@ const HeroSection = () => {
                                 justifyContent: 'center',
                                 border: 'none',
                                 fontSize: '16px',
-                                letterSpacing:'3px'
+                                letterSpacing: '3px'
                             }}>
                                 Get Quote
                                 <div className='mt-2'>

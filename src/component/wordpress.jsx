@@ -1,53 +1,48 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import overlayImg from "../assets/img/laptop-bg.png"; // Replace with your top image
-import laptopBg from "../assets/img/overlay-img.png"; // Replace with your bottom image
-// import "../assets/css/wordpressSection.css";
+import overlayImg from "../assets/img/laptop-bg.png"; // small overlay image
+import laptopBg from "../assets/img/overlay-img.png"; // background image
+import '../assets/css/wordpresssection.css'
+
 
 const WordPressSection = () => {
     return (
         <section className="py-5">
             <div className="container">
                 <div className="row align-items-center">
+
                     {/* Left Images */}
                     <div className="col-lg-6 col-md-6 col-12 position-relative mb-5 mb-md-0 d-flex justify-content-center">
-                        {/* Bottom Image */}
-                        <div className="position-relative">
+                        <div className="position-relative w-100 d-flex justify-content-center">
+                            {/* Bottom Image */}
                             <img
                                 src={laptopBg}
                                 alt="Laptop Background"
                                 className="img-fluid rounded-4 shadow-lg"
-                                style={{ maxWidth: "420px" }}
                             />
 
                             {/* Overlay small image */}
                             <div
-                                className="position-absolute shadow-lg rounded-4 p-3 text-white"
+                                className="overlay-card position-absolute shadow-lg rounded-4 p-3 text-white"
                                 style={{
-                                    bottom: "-20%",
-                                    left: "-15%",
                                     backgroundImage: `url(${overlayImg})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
-                                    width: "280px",
-                                    height: "200px",
-                                    top: '250px'
                                 }}
                             >
-                                <div className="d-flex flex-column justify-content-end h-100">
-                                    <h2 className="fw-bold">WordPress</h2>
-                                    <h2 className="fw-bold">Website</h2>
-                                    <h2 className="fw-bold">Development</h2>
+                                <div className="d-flex flex-column justify-content-end h-100 mx-2 text-start text-md-start text-center">
+                                    <h2 className="fw-bold fs-4">WordPress</h2>
+                                    <h2 className="fw-bold fs-4">Website</h2>
+                                    <h2 className="fw-bold fs-4">Development</h2>
                                 </div>
-                                <div className="d-flex flex-column h-100 mx-5 col-lg-12 mt-2 m">
-                                    <div className="">
-                                        <p className="mt-1 mb-0 mx-5" style={{ fontSize: "14px" }}>One Platform</p>
-                                        <p className="mb-0 mx-5 col-12" style={{ fontSize: "14px" }}>
-                                            Various versions have evolved over the years,
-                                            sometimes by accident, sometimes on purpose
-                                        </p>
-                                    </div>
 
+                                {/* Responsive Overlaypara */}
+                                <div className="mt-2 Overlaypara">
+                                    <p className="mb-2 fw-bold ">One Platform</p>
+                                    <p className="mb-0 small">
+                                        Various versions have evolved over the years,
+                                        sometimes by accident, sometimes on purpose.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +50,6 @@ const WordPressSection = () => {
 
                     {/* Right Content */}
                     <div className="col-lg-6 col-md-6 col-12 text-center text-md-start px-lg-5">
-                        {/* Badge */}
                         <div className="mb-3">
                             <span
                                 className="px-4 py-1 rounded-pill fw-semibold"
@@ -81,14 +75,11 @@ const WordPressSection = () => {
                         </p>
                         <p className="text-muted mb-4">
                             Sturdy performance that is{" "}
-                            <strong>
-                                unabated by the number of pages
-                            </strong>
-                            , application or traffic. There is a reason why one-fourth of the
-                            internet uses WordPress.
+                            <strong>unabated by the number of pages</strong>, application
+                            or traffic. There is a reason why one-fourth of the internet
+                            uses WordPress.
                         </p>
 
-                        {/* Button */}
                         <button
                             className="btn fw-semibold px-4 py-2 rounded-pill shadow-sm"
                             style={{
@@ -102,6 +93,11 @@ const WordPressSection = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Custom CSS */}
+            <style jsx>{`
+               
+            `}</style>
         </section>
     );
 };

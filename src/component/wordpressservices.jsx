@@ -14,13 +14,13 @@ const WordPressService = () => {
                 <div className="row align-items-center col-lg-12">
                     {/* Left Section */}
                     <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                        <span className="badgeservice bg-light text-dark px-3 py-2 mb-5 shadow-sm rounded-pill">
-                            <span className="me-2 bg-light rounded-circle d-inline-block " style={{ width: "10px", height: "10px",}}></span>
+                        <span className="badgeservice bg-light text-dark px-3 py-2 mb-5 mx-4 shadow-sm rounded-pill">
+                            <span className="me-2  bg-light rounded-circle d-inline-block " style={{ width: "10px", height: "10px",}}></span>
                             Digital Landscape
                         </span>
 
-                        <h1 className="fw-bold mb-3 py-4 display-5">WordPress Development Services</h1>
-                        <p className="text-muted mb-4">
+                        <h1 className="fw-bold mb-3 py-4 display-5 mx-4">WordPress Development Services</h1>
+                        <p className="text-muted mb-4 mx-4">
                             Discover our growing range of WordPress web development services that aim to empower businesses
                             with a custom-built and unique website.
                         </p>
@@ -30,7 +30,7 @@ const WordPressService = () => {
                             <div className="col-6">
                                
 
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center mx-4">
                                       <span className="fw-bold me-1">5.0</span>
                                     {[...Array(5)].map((_, i) => (
                                         <FaStar key={i} className="text-warning me-1" />
@@ -42,16 +42,13 @@ const WordPressService = () => {
                                 </div>
 
                             </div>
-                            <div className="col">
-
+                            <div>
+                                <h6 className="mb-0 fw-bold mx-4 mx-lg-0">125K+</h6>
+                                <small className="text-muted mx-4">Success Probability</small>
                             </div>
                             <div>
-                                <h6 className="mb-0 fw-bold">125K+</h6>
-                                <small className="text-muted">Success Probability</small>
-                            </div>
-                            <div>
-                                <h6 className="mb-0 fw-bold">9,99%</h6>
-                                <small className="text-muted">Success Probability</small>
+                                <h6 className="mb-0 fw-bold mx-4">9,99%</h6>
+                                <small className="text-muted mx-4">Success Probability</small>
                             </div>
                         </div>
                     </div>

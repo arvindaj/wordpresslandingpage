@@ -1,0 +1,54 @@
+/* Tablet-specific styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Reduce heading font size */
+  .portfolio-section h2 {
+    font-size: 2rem !important;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  /* Card image scaling */
+  .portfolio-section .card img {
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* Adjust first card (86M+) body */
+  .portfolio-section .card .card-body h1 {
+    font-size: 1.8rem;
+  }
+  .portfolio-section .card .card-body h6 {
+    font-size: 1rem;
+  }
+
+  /* Blog series & WordPress card */
+  .portfolio-section .card-body {
+    padding: 1rem !important;
+  }
+
+  /* Inner small cards in last column stack nicely */
+  .portfolio-section .row .col-sm-6 {
+    padding: 0.5rem;
+  }
+
+  /* Button adjustments */
+  .portfolio-section .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Badge smaller */
+  .portfolio-section .badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+ 
+}
+
+/* Optional: Small hover effect for cards */
+.portfolio-section .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}

@@ -1,12 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaArrowRight } from "react-icons/fa";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import teamImg from "../assets/img/team-working.png"; // replace with your image path
 
 const WordPressAgency = () => {
     return (
-        <section className="py-5">
+        <section className="py-5 pb-0 mx-3">
             <div className="container">
                 <div className="row align-items-center">
                     {/* Left Content */}
@@ -16,99 +15,95 @@ const WordPressAgency = () => {
                             <span className="me-2">
                                 <span
                                     className="d-inline-block rounded-circle"
-                                    style={{ width: "10px", height: "10px", backgroundColor: "#8BC34A" }}
+                                    style={{
+                                        width: "10px",
+                                        height: "10px",
+                                        backgroundColor: "#8BC34A",
+                                    }}
                                 ></span>
                             </span>
                             <span className="fw-bold small">Web Performance</span>
                         </div>
 
                         {/* Heading */}
-                        <h1 className="fw-bold display-5">WordPress Development Agency</h1>
-                        <p className="text-muted">
+                        <h1 className="fw-bold display-6 display-md-5">
+                            WordPress Development Agency
+                        </h1>
+                        <p className="text-muted small">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.
                         </p>
 
-                        {/* Description */}
-                        <p className="text-muted">
+                        <p className="text-muted small">
                             Our team of talented WordPress developers is not just skilled professionals; they
-                            are dedicated experts who go beyond coding. They take the time to understand your
-                            business, ensuring that the websites they create are not just functional but also
-                            aligned with your brand and objectives.
+                            are dedicated experts who go beyond coding.
                         </p>
 
-                        <p className="text-muted">
+                        <p className="text-muted small">
                             With a deep knowledge of WordPress, our developers deliver customized solutions
-                            that cater to your specific needs. From design to functionality, they ensure that
-                            your website not only looks great but also performs exceptionally, helping you
-                            achieve your online goals with ease.
+                            that cater to your specific needs.
                         </p>
 
-                        <p className="text-muted">
-                            Don’t be worried of the time taken. Our exclusive team of WordPress web designers
-                            and developers will see to it that your project gets completed in the shortest time
-                            span possible with utmost perfection.
+                        <p className="text-muted small">
+                            Don’t be worried of the time taken. Our exclusive team will see to it that your project
+                            gets completed fast with utmost perfection.
                         </p>
 
                         {/* Features */}
                         <div className="d-flex align-items-start mb-3">
-                            <div className="me-2 btn border-black">
-                                <FaArrowRight className="fs-4 " style={{ transform: 'rotate(-25deg)' }} />
+                            <div className="me-2 btn border-black p-2">
+                                <FaArrowRight className="fs-5" style={{ transform: "rotate(-25deg)" }} />
                             </div>
-                            <p className="mb-0 fw-semibold ">
+                            <p className="mb-0 fw-semibold small">
                                 Share your idea, and we'll bring it to life with WordPress.
                             </p>
                         </div>
 
                         <div className="d-flex align-items-start mb-4">
-                            <div className="me-2 btn border-black">
-                                <FaArrowRight className="fs-4 " style={{ transform: 'rotate(-25deg)' }} />
+                            <div className="me-2 btn border-black p-2">
+                                <FaArrowRight className="fs-5" style={{ transform: "rotate(-25deg)" }} />
                             </div>
-                            <p className="mb-0 fw-semibold">
-                                Our expertise ensures a rapid, well‑designed, and fully functional website for a
-                                swift market entry.
+                            <p className="mb-0 fw-semibold small">
+                                Our expertise ensures a rapid, well‑designed, and fully functional website.
                             </p>
                         </div>
 
                         {/* Button */}
-                        <button className="btn btn-dark rounded-pill px-4">Get Started</button>
+                        <button className="btn btn-dark rounded-pill px-4 w-100 w-sm-auto">
+                            Get Started
+                        </button>
                     </div>
 
                     {/* Right Image */}
                     <div className="col-lg-6">
-                        <div
-                            className="position-relative overflow-hidden rounded-3 shadow"
-                            style={{ height: "100%", minHeight: "400px", scale: "calc(0.7)" }}
-                        >
+                        <div className="position-relative overflow-hidden rounded-3 shadow" style={{ height: "100%", minHeight: "400px", scale: "calc(0.7)" }}>
                             <img
                                 src={teamImg}
                                 alt="Team Working"
-                                className="img-fluid w-100 h-100"
-                                style={{ objectFit: "cover", }}
+                                className="img-fluid w-100"
+                                style={{ objectFit: "cover", minHeight: "250px" }}
                             />
-                            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-start p-4 text-white"
-                            >
-                                <h1 className="fw-bold top-1">Engaging Your Audience, In Fast Performance</h1>
-
+                            {/* Top Text */}
+                            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-start p-3 p-md-4 text-white">
+                                <h2 className="fw-bold fs-5 fs-md-3">
+                                    Engaging Your Audience, In Fast Performance
+                                </h2>
                             </div>
-                            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 text-white"
-                            >
 
+                            {/* Bottom Link */}
+                            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-md-4 text-white">
                                 <a
                                     href="#"
-                                    className="text-white fw-semibold mt-2 d-flex align-items-center fs-4"
+                                    className="text-white fw-semibold mt-2 d-flex align-items-center fs-6 fs-md-4"
                                 >
                                     Learn more
-                                    <FaCheckCircle className="ms-2" style={{ color: '#8EC440' }} />
+                                    <FaCheckCircle className="ms-2" style={{ color: "#8EC440" }} />
                                 </a>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            
         </section>
     );
 };

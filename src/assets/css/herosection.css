@@ -1,3 +1,11 @@
+/* Desktop default */
+.womanpic {
+    position: absolute;
+    top: -10%;
+    scale: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
 .line5 {
     width: 15%;
     height: 1.5px;
@@ -15,12 +23,70 @@
     background: linear-gradient(90deg, #F6FAF0 0%, #DADBD9 100%);
 }
 
-.womanpic {
-    position: absolute;
-    top: -10%;
-    scale: calc(0.9);
-}
-.ctabutton{
+.ctabutton {
     background: linear-gradient(180deg, #6A6969 0%, #333333 100%);
+}
 
+/* 📱 Mobile & Tablet Responsive */
+@media (max-width: 991px) {
+    .womanpic {
+        position: relative;
+        top: 0;
+        transform: rotate(0deg);
+        scale: 1;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .line5 {
+        position: static;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .hero-section .display-1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .hero-section h2,
+    .hero-section h3,
+    .hero-section p {
+        text-align: center;
+    }
+
+    .cta-section {
+        text-align: center;
+    }
+
+    .cta-section button {
+        margin: 0 auto;
+    }
+}
+
+/* 📱 Small mobile screens */
+@media (max-width: 576px) {
+    .womanpic {
+        width: 70%;
+    }
+
+    .hero-section .display-1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section h3 {
+        font-size: 1rem;
+    }
+    .greenbadge{
+        width: 100px;
+    }
 }

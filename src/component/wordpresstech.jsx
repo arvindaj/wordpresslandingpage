@@ -9,7 +9,7 @@ const WordPressTechSection = () => {
                 <div className="row align-items-center">
 
                     {/* Left Image */}
-                    <div className="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div className="col-12 col-lg-4 text-center mb-4 mb-lg-0">
                         <img
                             src={womanLaptop}
                             alt="Woman with Laptop"
@@ -19,14 +19,14 @@ const WordPressTechSection = () => {
                     </div>
 
                     {/* Center Content */}
-                    <div className="col-lg-8 mb-4 mb-lg-0">
+                    <div className="col-12 col-lg-8">
                         {/* Top Badge */}
                         <div
                             className="d-inline-block px-3 py-1 mb-3 rounded-pill"
                             style={{ backgroundColor: "#fff", color: "#000", fontWeight: "600" }}
                         >
                             <span
-                                className="me-2"
+                                className="me-2 mx-3"
                                 style={{
                                     display: "inline-block",
                                     width: "10px",
@@ -39,13 +39,14 @@ const WordPressTechSection = () => {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="fw-bold mb-4">
-                            Technologies we use for word press web development
+                        <h1 className="fw-bold mb-4 mx-3">
+                            Technologies we use for WordPress web development
                         </h1>
-                        <div className="row">
+
+                        <div className="row g-4">
                             {/* Center Card */}
                             <div
-                                className="p-4 col-6"
+                                className="col-11 col-md-5 p-4 mx-3"
                                 style={{
                                     backgroundColor: "#1b1b1b",
                                     border: "1px solid rgba(255,255,255,0.3)",
@@ -71,16 +72,14 @@ const WordPressTechSection = () => {
                             </div>
 
                             {/* Right Text List */}
-                            <div className="col-lg-6">
+                            <div className="col-12 col-md-6 mx-0">
                                 <div className="mb-4">
                                     <h6 className="fw-bold">AI/ML</h6>
                                     <p className="text-white-50 mb-0">Lorem ipsum dolor sit amet</p>
                                 </div>
-                                <div className="mb-4 d-flex">
-                                    <div>
-                                        <h6 className="fw-bold ">Computer Vision</h6>
-                                        <p className="text-white-50 mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
+                                <div className="mb-4">
+                                    <h6 className="fw-bold">Computer Vision</h6>
+                                    <p className="text-white-50 mb-0">Lorem ipsum dolor sit amet</p>
                                 </div>
                                 <div>
                                     <h6 className="fw-bold">Cloud Computing</h6>
@@ -88,11 +87,7 @@ const WordPressTechSection = () => {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-
 
                 </div>
             </div>

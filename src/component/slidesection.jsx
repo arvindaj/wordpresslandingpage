@@ -16,35 +16,33 @@ const SlideSection = () => {
   const row2 = [img6, img7, img8, img9, img10];
 
   return (
-    <div className="position-relative py-4 ">
+    <div className="position-relative py-4">
       <div className="overflow-hidden mb-4">
         
         {/* First Row */}
-        <div className="d-flex marquee">
+        <div className="d-flex marquee flex-nowrap">
           {[...row1, ...row1].map((img, idx) => (
-            <img 
-              key={idx} 
-              src={img} 
-              alt={`logo-${idx}`} 
-              className="mx-3 mx-sm-4 img-fluid" 
-              style={{height: "60px"}}
+            <img
+              key={idx}
+              src={img}
+              alt={`logo-${idx}`}
+              className="img-fluid mx-2 mx-md-4 logo-img"
             />
           ))}
         </div>
 
         {/* Second Row */}
-        <div className="d-flex marquee marquee-reverse mt-4">
+        <div className="d-flex marquee marquee-reverse flex-nowrap mt-4">
           {[...row2, ...row2].map((img, idx) => (
-            <img 
-              key={idx} 
-              src={img} 
-              alt={`logo-${idx}`} 
-              className="mx-3 mx-sm-4 img-fluid" 
-              style={{height: "60px"}}
+            <img
+              key={idx}
+              src={img}
+              alt={`logo-${idx}`}
+              className="img-fluid mx-2 mx-md-4 logo-img"
             />
           ))}
         </div>
-        
+
       </div>
     </div>
   );

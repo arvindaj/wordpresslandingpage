@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import mainImg from "../assets/img/main-laptop.png"; // Replace with your laptop+man image
-import sideImg from "../assets/img/side-student.png"; // Replace with your right-side image
+import mainImg from "../assets/img/main-laptop.png"; // Main image
+import sideImg from "../assets/img/side-student.png"; // Side image
 
 const WordPressBenfits = () => {
   return (
@@ -10,8 +10,7 @@ const WordPressBenfits = () => {
         <div className="row align-items-center">
           
           {/* Left Content */}
-          <div className="col-lg-6 mb-4 mb-lg-0">
-            {/* Badge */}
+          <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
             <span 
               className="d-inline-flex align-items-center px-3 py-1 mb-3 rounded-pill"
               style={{ backgroundColor: "#f2f2f2", fontSize: "14px" }}
@@ -43,22 +42,20 @@ const WordPressBenfits = () => {
             </button>
           </div>
 
-          {/* Right Image Section */}
-          <div className="col-lg-6 d-flex justify-content-center gap-3">
-            <div className="position-relative">
+          {/* Right Image Section - Single Row Even on Mobile */}
+          <div className="col-lg-6">
+            <div className="d-flex justify-content-center gap-3 flex-nowrap overflow-hidden">
               <img 
                 src={mainImg} 
                 alt="Main WordPress" 
                 className="img-fluid rounded"
-                style={{ maxHeight: "450px" }}
+                style={{ maxWidth: "50%", height: "auto" }}
               />
-            </div>
-            <div className="d-none d-md-block">
               <img 
                 src={sideImg} 
                 alt="Side Student" 
                 className="img-fluid rounded"
-                style={{ maxHeight: "350px", top:'100px', position:'relative' }}
+                style={{ maxWidth: "50%", height: "350px",bottom:'-120px', position:'relative'  }}
               />
             </div>
           </div>
