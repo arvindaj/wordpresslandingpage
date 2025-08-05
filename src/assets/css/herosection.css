@@ -27,8 +27,322 @@
     background: linear-gradient(180deg, #6A6969 0%, #333333 100%);
 }
 
-/* 📱 Mobile & Tablet Responsive */
-@media (max-width: 991px) {
+
+ @keyframes floatUpDown {
+                    0%, 100% { transform: translateY(0) rotate(15deg); }
+                    50% { transform: translateY(-20px) rotate(15deg); }
+                }
+
+                @keyframes slideInLeft {
+                    from { 
+                        opacity: 0; 
+                        transform: translateX(-100px); 
+                    }
+                    to { 
+                        opacity: 1; 
+                        transform: translateX(0); 
+                    }
+                }
+
+                @keyframes slideInRight {
+                    from { 
+                        opacity: 0; 
+                        transform: translateX(100px); 
+                    }
+                    to { 
+                        opacity: 1; 
+                        transform: translateX(0); 
+                    }
+                }
+
+                @keyframes fadeInUp {
+                    from { 
+                        opacity: 0; 
+                        transform: translateY(30px); 
+                    }
+                    to { 
+                        opacity: 1; 
+                        transform: translateY(0); 
+                    }
+                }
+
+                @keyframes fadeInDown {
+                    from { 
+                        opacity: 0; 
+                        transform: translateY(-30px); 
+                    }
+                    to { 
+                        opacity: 1; 
+                        transform: translateY(0); 
+                    }
+                }
+
+                @keyframes zoomIn {
+                    from { 
+                        opacity: 0; 
+                        transform: scale(0.5); 
+                    }
+                    to { 
+                        opacity: 1; 
+                        transform: scale(1); 
+                    }
+                }
+
+                @keyframes bounceIn {
+                    0% { 
+                        opacity: 0; 
+                        transform: scale(0.3); 
+                    }
+                    50% { 
+                        opacity: 1; 
+                        transform: scale(1.05); 
+                    }
+                    70% { transform: scale(0.9); }
+                    100% { transform: scale(1); }
+                }
+
+                @keyframes bounceInUp {
+                    0% { 
+                        opacity: 0; 
+                        transform: translateY(100px); 
+                    }
+                    60% { 
+                        opacity: 1; 
+                        transform: translateY(-10px); 
+                    }
+                    80% { transform: translateY(5px); }
+                    100% { transform: translateY(0); }
+                }
+
+                @keyframes slideInUp {
+                    from { 
+                        opacity: 0; 
+                        transform: translateY(50px); 
+                    }
+                    to { 
+                        opacity: 1; 
+                        transform: translateY(0); 
+                    }
+                }
+
+                @keyframes pulse {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(1.05); }
+                }
+
+                @keyframes glow {
+                    from { text-shadow: 0 0 5px #8FDC24; }
+                    to { text-shadow: 0 0 20px #8FDC24, 0 0 1px #8FDC24; }
+                }
+
+                @keyframes textGlow {
+                    from { text-shadow: 0 0 5px #8FDC24; }
+                    to { text-shadow: 0 0 15px #8FDC24, 0 0 1px #8FDC24; }
+                }
+
+                @keyframes colorShift {
+                    0%, 100% { color: #161718ff; }
+                    50% { color: #333; }
+                }
+
+                @keyframes gentleRotate {
+                    0% { transform: rotate(15deg); }
+                    25% { transform: rotate(18deg); }
+                    50% { transform: rotate(15deg); }
+                    75% { transform: rotate(12deg); }
+                    100% { transform: rotate(15deg); }
+                }
+
+                @keyframes rotate360 {
+                    from { transform: rotate(0deg); }
+                    to { transform: rotate(360deg); }
+                }
+
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                /* Hover Effects */
+                .woman-hero-img:hover {
+                    transform: rotate(0deg) scale(1.05) !important;
+                    transition: all 0.5s ease;
+                }
+
+                .recognition-logo:hover {
+                    transform: scale(1.2) rotate(5deg);
+                    transition: all 0.3s ease;
+                }
+
+                .cta-button-animated:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 25px rgba(143, 220, 36, 0.3);
+                }
+
+                .cta-button-animated:hover .send-icon {
+                    transform: scale(1.1) rotate(15deg);
+                }
+
+                /* Responsive adjustments */
+                @media (max-width: 768px) {
+                    .floating-bg-1, .floating-bg-2 {
+                        display: none;
+                    }
+                    
+                    .hero-content {
+                        text-align: center;
+                    }
+                }
+
+
+
+/* 📱 iPad Pro 12.9" (1024x1366) - Portrait */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .womanpic {
+        position: relative;
+        top: -5%;
+        scale: 0.8;
+        transform: rotate(10deg);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .line5 {
+        width: 20%;
+        left: 300px;
+        bottom: 120px;
+    }
+
+    .hero-section .display-1 {
+        font-size: 2.8rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* 📱 iPad Pro 12.9" (1366x1024) - Landscape */
+@media only screen and (min-width: 1366px) and (max-width: 1400px) and (orientation: landscape) {
+    .womanpic {
+        position: absolute;
+        top: -8%;
+        scale: 0.85;
+        transform: rotate(12deg);
+    }
+
+    .line5 {
+        width: 18%;
+        left: 350px;
+        bottom: 140px;
+    }
+}
+
+/* 📱 iPad Pro 11" (834x1194) - Portrait */
+@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
+    .womanpic {
+        position: relative;
+        top: 0;
+        scale: 0.75;
+        transform: rotate(8deg);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .line5 {
+        position: static;
+        width: 30%;
+        margin: 15px auto;
+    }
+
+    .hero-section .display-1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .hero-section h2,
+    .hero-section h3 {
+        text-align: center;
+    }
+
+    .cta-section {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+/* 📱 iPad Pro 11" (1194x834) - Landscape */
+@media only screen and (min-width: 1194px) and (max-width: 1300px) and (orientation: landscape) {
+    .womanpic {
+        position: absolute;
+        top: -6%;
+        scale: 0.8;
+        transform: rotate(10deg);
+    }
+
+    .line5 {
+        width: 16%;
+        left: 320px;
+        bottom: 130px;
+    }
+}
+
+/* 📱 Regular iPad (768x1024) - Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .womanpic {
+        position: relative;
+        top: 0;
+        scale: 0.85;
+        transform: rotate(5deg);
+        display: block;
+        margin: 0 auto;
+        left: -50px;
+    }
+
+    .line5 {
+        position: static;
+        width: 40%;
+        margin: 10px auto;
+    }
+
+    .hero-section .display-1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .hero-section h2,
+    .hero-section h3,
+    .hero-section p {
+        text-align: center;
+    }
+
+    .cta-section {
+        text-align: center;
+    }
+
+    .cta-section button {
+        margin: 0 auto;
+    }
+}
+
+/* 📱 Regular iPad (1024x768) - Landscape */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+    .womanpic {
+        position: absolute;
+        top: -5%;
+        scale: 0.75;
+        transform: rotate(8deg);
+    }
+
+    .line5 {
+        width: 18%;
+        left: 280px;
+        bottom: 120px;
+    }
+}
+
+/* 📱 Mobile & Small Tablet Responsive */
+@media (max-width: 767px) {
     .womanpic {
         position: relative;
         top: 0;
@@ -69,6 +383,7 @@
 @media (max-width: 576px) {
     .womanpic {
         width: 70%;
+        scale: 0.9;
     }
 
     .hero-section .display-1 {
@@ -86,7 +401,8 @@
     .cta-section h3 {
         font-size: 1rem;
     }
-    .greenbadge{
+
+    .greenbadge {
         width: 100px;
     }
 }

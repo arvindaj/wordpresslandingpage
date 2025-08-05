@@ -1,49 +1,119 @@
- .overlay-card {
-                    width: 65%;
-                    aspect-ratio: 4/3;
-                    bottom: 25%;
-                    left: 5%;
-                }
+/* Your existing styles */
+.overlay-card {
+    width: 65%;
+    aspect-ratio: 4/3;
+    bottom: 25%;
+    left: 5%;
+}
 
-                .Overlaypara {
-                    position: absolute;
-                    bottom: -120px;
-                    left: 150px;
-                    right: 0px;
-                    font-size: 14px;
-                }
+.Overlaypara {
+    position: absolute;
+    bottom: -120px;
+    left: 150px;
+    right: 0px;
+    font-size: 14px;
+}
 
-                
-                @media (max-width: 992px) { /* Tablets */
-                    .overlay-card {
-                        width: 70%;
-                        bottom: 25%;
-                        left: 0;
-                    }
-                    .Overlaypara {
-                        font-size: 13px;
-                        bottom: -90px;
-                        text-align: center;
-                        left: 30px;
-                        right: 10px;
-                        width: 70%;
-                    }
-                }
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-                @media (max-width: 576px) { /* Mobile */
-                    .overlay-card {
-                        width: 80%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        bottom: 10;
-                        text-align: center;
-                    }
-                    .Overlaypara {
-                        font-size: 12px;
-                        position: relative;
-                        margin-top: 10px;
-                        left: 40px;
-                        right: 0;
-                        bottom: -120px;
-                    }
-                }
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Animation classes */
+.laptop-bg-animation {
+    animation: fadeInUp 1s ease-out, floatAnimation 3s ease-in-out infinite 1s;
+    transition: transform 0.3s ease;
+}
+
+.laptop-bg-animation:hover {
+    transform: scale(1.02);
+}
+
+.overlay-animation {
+    animation: slideInRight 1.2s ease-out 0.3s both, pulseGlow 4s ease-in-out infinite 2s;
+    transition: transform 0.3s ease;
+}
+
+.overlay-animation:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive styles (your existing) */
+@media (max-width: 992px) { /* Tablets */
+    .overlay-card {
+        width: 70%;
+        bottom: 25%;
+        left: 0;
+    }
+    .Overlaypara {
+        font-size: 13px;
+        bottom: -90px;
+        text-align: center;
+        left: 30px;
+        right: 10px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile */
+    .overlay-card {
+        width: 80%;
+        left: 10%;
+        transform: translateX(-50%);
+        bottom: 10;
+        text-align: center;
+    }
+    .Overlaypara {
+        font-size: 12px;
+        position: relative;
+        margin-top: 10px;
+        left: 40px;
+        right: 0;
+        bottom: -120px;
+    }
+    
+    /* Adjust animations for mobile */
+    .overlay-animation {
+        animation: slideInRight 1.2s ease-out 0.3s both, pulseGlow 4s ease-in-out infinite 2s;
+    }
+    
+    .overlay-animation:hover {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}

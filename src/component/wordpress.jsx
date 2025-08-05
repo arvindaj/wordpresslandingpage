@@ -4,7 +4,6 @@ import overlayImg from "../assets/img/laptop-bg.png"; // small overlay image
 import laptopBg from "../assets/img/overlay-img.png"; // background image
 import '../assets/css/wordpresssection.css'
 
-
 const WordPressSection = () => {
     return (
         <section className="py-5">
@@ -14,16 +13,16 @@ const WordPressSection = () => {
                     {/* Left Images */}
                     <div className="col-lg-6 col-md-6 col-12 position-relative mb-5 mb-md-0 d-flex justify-content-center">
                         <div className="position-relative w-100 d-flex justify-content-center">
-                            {/* Bottom Image */}
+                            {/* Bottom Image with Animation */}
                             <img
                                 src={laptopBg}
                                 alt="Laptop Background"
-                                className="img-fluid rounded-4 shadow-lg"
+                                className="img-fluid rounded-4 shadow-lg laptop-bg-animation"
                             />
 
-                            {/* Overlay small image */}
+                            {/* Overlay small image with Animation */}
                             <div
-                                className="overlay-card position-absolute shadow-lg rounded-4 p-3 text-white"
+                                className="overlay-card position-absolute shadow-lg rounded-4 p-3 text-white overlay-animation"
                                 style={{
                                     backgroundImage: `url(${overlayImg})`,
                                     backgroundSize: "cover",
@@ -94,10 +93,6 @@ const WordPressSection = () => {
                 </div>
             </div>
 
-            {/* Custom CSS */}
-            <style jsx>{`
-               
-            `}</style>
         </section>
     );
 };
