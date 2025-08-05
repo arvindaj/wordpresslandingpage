@@ -17,7 +17,7 @@ const WordPressSection = () => {
                                 src={laptopBg}
                                 alt="Laptop Background"
                                 className="img-fluid rounded-4 shadow-lg"
-                                style={{ maxWidth: "380px" }}
+                                style={{ maxWidth: "420px" }}
                             />
 
                             {/* Overlay small image */}

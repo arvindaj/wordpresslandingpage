@@ -43,10 +43,10 @@ const Footer = () => {
 
         <div className="d-flex align-items-center mb-3">
           <h5
-            className="fw-bold mb-0 me-3"
+            className="fw-bold mb-0 me-3 "
             style={{ color: "#8EC440", whiteSpace: "nowrap" }}
           >
-            Our Word Press Service Industries
+            Our Word Press Service <br/>Industries
           </h5>
 
           <div

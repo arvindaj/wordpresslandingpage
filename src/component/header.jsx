@@ -25,7 +25,7 @@ const Headersection = () => {
                     {/* Growth Button */}
                     <a
                         href="#"
-                        className="px-3 px-lg-4 py-2 mt-2 mt-sm-0 ms-sm-3 rounded-pill shadow-sm text-decoration-none d-flex align-items-center justify-content-center gap-2"
+                        className=" p-2 mt-2 mt-sm-0 ms-sm-3 rounded-pill shadow-sm text-decoration-none d-flex align-items-center justify-content-center gap-2"
                         style={{
                             backgroundColor: "#f8f9fa",
                             border: "1px solid #ddd",
@@ -33,6 +33,9 @@ const Headersection = () => {
                             letterSpacing: "0.1em",
                             color: "#000",
                             fontFamily: "Libre Franklin",
+                             position:'relative',
+                                left:'-80px',
+                                bottom:'-40px'
                         }}
                     >
                         <span
@@ -42,6 +45,7 @@ const Headersection = () => {
                                 height: "10px",
                                 backgroundColor: "#B6ED55",
                                 borderRadius: "50%",
+                               
                             }}
                         ></span>
                         Growth
