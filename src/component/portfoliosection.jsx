@@ -45,7 +45,7 @@ const PortfolioSection = () => {
 
           {/* Custom Project */}
           <div className="col-12 col-sm-6 col-md-4">
-            <div className="card bg-dark text-white border-0 h-100">
+            <div className="card bg-dark text-white border-0">
               <img src={user2} className="card-img-top img-fluid" alt="Custom Project" />
               <div className="card-body position-relative" style={{ top: "-50px" }}>
                  <span className="btn mb-3 mt-2" style={{
@@ -65,7 +65,7 @@ const PortfolioSection = () => {
 
           {/* Blog Series Card */}
           <div className="col-12 col-md-5">
-            <div className="card border-0 h-100">
+            <div className="card border-0 ">
               <div className="card-body bg-light mb-4">
                 <h1 className="card-title fw-bold fs-4">
                   Building Authority Through Storytelling

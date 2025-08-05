@@ -54,7 +54,7 @@ const WordPressAgency = () => {
                             <div className="me-2 btn border-black p-2">
                                 <FaArrowRight className="fs-5" style={{ transform: "rotate(-25deg)" }} />
                             </div>
-                            <p className="mb-0 fw-semibold small">
+                            <p className="mb-0 fw-semibold small mt-2">
                                 Share your idea, and we'll bring it to life with WordPress.
                             </p>
                         </div>
@@ -63,7 +63,7 @@ const WordPressAgency = () => {
                             <div className="me-2 btn border-black p-2">
                                 <FaArrowRight className="fs-5" style={{ transform: "rotate(-25deg)" }} />
                             </div>
-                            <p className="mb-0 fw-semibold small">
+                            <p className="mb-0 fw-semibold small mt-2">
                                 Our expertise ensures a rapid, well‑designed, and fully functional website.
                             </p>
                         </div>
