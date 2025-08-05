@@ -9,6 +9,10 @@ import WordPressTechSection from './component/wordpresstech'
 import WordPressAgency from './component/wordpressagency'
 import ExploreCard from './component/explorecard'
 import PortfolioSection from './component/portfoliosection'
+import ContactCard from './component/contact'
+import Testimonial from './component/testimonial'
+import Footer from './component/footer'
+import SlideSection from './component/slidesection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +28,10 @@ function App() {
      <WordPressAgency/>
      <ExploreCard/>
      <PortfolioSection/>
+     <SlideSection/>
+     <ContactCard/>
+     <Testimonial/>
+     <Footer/>
     </>
   )
 }
