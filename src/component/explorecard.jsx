@@ -10,7 +10,7 @@ const ExploreCard = () => {
           maxWidth: "900px",
           borderRadius: "25px",
           background: `url(${bgPattern}) center/cover no-repeat, #000`,
-          boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+          
         }}
       >
         <h5 className="fw-bold mb-4">
