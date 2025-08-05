@@ -3,7 +3,7 @@ import bgPattern from "../assets/img/bgPattern.jpg"; // Use your uploaded backgr
 
 const ExploreCard = () => {
   return (
-    <div className="container my-0 mx-2">
+    <div className="container my-0">
       <div
         className="text-center text-white p-5 mx-auto"
         style={{

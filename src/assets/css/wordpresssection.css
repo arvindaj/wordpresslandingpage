@@ -1,0 +1,49 @@
+ .overlay-card {
+                    width: 65%;
+                    aspect-ratio: 4/3;
+                    bottom: 25%;
+                    left: 5%;
+                }
+
+                .Overlaypara {
+                    position: absolute;
+                    bottom: -120px;
+                    left: 150px;
+                    right: 0px;
+                    font-size: 14px;
+                }
+
+                
+                @media (max-width: 992px) { /* Tablets */
+                    .overlay-card {
+                        width: 70%;
+                        bottom: 25%;
+                        left: 0;
+                    }
+                    .Overlaypara {
+                        font-size: 13px;
+                        bottom: -90px;
+                        text-align: center;
+                        left: 30px;
+                        right: 10px;
+                        width: 70%;
+                    }
+                }
+
+                @media (max-width: 576px) { /* Mobile */
+                    .overlay-card {
+                        width: 80%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 10;
+                        text-align: center;
+                    }
+                    .Overlaypara {
+                        font-size: 12px;
+                        position: relative;
+                        margin-top: 10px;
+                        left: 40px;
+                        right: 0;
+                        bottom: -120px;
+                    }
+                }
