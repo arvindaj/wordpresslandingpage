@@ -10,7 +10,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-35px);
   }
 }
 
@@ -18,10 +18,10 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(260px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
 }
