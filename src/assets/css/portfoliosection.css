@@ -1,54 +1,32 @@
-/* Tablet-specific styles */
+/* ===== Tablet Screen Styles (768px to 1024px) ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Reduce heading font size */
+  /* Adjust card spacing */
+  .portfolio-section .card {
+    margin-bottom: 20px;
+  }
+
+  /* Resize headings for tablets */
+  .portfolio-section h1,
   .portfolio-section h2 {
-    font-size: 2rem !important;
-    line-height: 2.5rem;
+    font-size: 1.8rem !important;
     text-align: center;
   }
 
-  /* Card image scaling */
-  .portfolio-section .card img {
-    height: auto;
-    max-height: 250px;
-    object-fit: cover;
+  /* Center images on tablet */
+  .portfolio-section img {
+    display: block;
+    margin: 0 auto;
   }
 
-  /* Adjust first card (86M+) body */
-  .portfolio-section .card .card-body h1 {
-    font-size: 1.8rem;
-  }
-  .portfolio-section .card .card-body h6 {
-    font-size: 1rem;
-  }
-
-  /* Blog series & WordPress card */
+  /* Adjust padding for tablet view */
   .portfolio-section .card-body {
-    padding: 1rem !important;
+    padding: 1.2rem;
+    text-align: center;
   }
 
-  /* Inner small cards in last column stack nicely */
-  .portfolio-section .row .col-sm-6 {
-    padding: 0.5rem;
+  /* Optional: Stack inner row for blog section vertically */
+  .portfolio-section .row.g-3 > .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
-
-  /* Button adjustments */
-  .portfolio-section .btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-  /* Badge smaller */
-  .portfolio-section .badge {
-    font-size: 0.75rem;
-    padding: 0.35rem 0.65rem;
-  }
-
- 
-}
-
-/* Optional: Small hover effect for cards */
-.portfolio-section .card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s ease;
 }
