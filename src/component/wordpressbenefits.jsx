@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import mainImg from "../assets/img/main-laptop.png"; // Main image
 import sideImg from "../assets/img/side-student.png"; // Side image
+import "../assets/css/wordpressbenefits.css"; // New CSS file for animations
 
 const WordPressBenfits = () => {
   return (
@@ -42,20 +43,20 @@ const WordPressBenfits = () => {
             </button>
           </div>
 
-          {/* Right Image Section - Single Row Even on Mobile */}
+          {/* Right Image Section with Animations */}
           <div className="col-lg-6">
             <div className="d-flex justify-content-center gap-3 flex-nowrap overflow-hidden">
               <img 
                 src={mainImg} 
                 alt="Main WordPress" 
-                className="img-fluid rounded"
+                className="img-fluid rounded mainImgAnim"
                 style={{ maxWidth: "50%", height: "auto" }}
               />
               <img 
                 src={sideImg} 
                 alt="Side Student" 
-                className="img-fluid rounded"
-                style={{ maxWidth: "50%", height: "350px",bottom:'-120px', position:'relative'  }}
+                className="img-fluid rounded sideImgAnim"
+                style={{ maxWidth: "50%", height: "350px", bottom:'-120px', position:'relative' }}
               />
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import womanLaptop from "../assets/img/woman-laptop.png"; // Replace with your image path
+import "../assets/css/wordpresstechsection.css"; // Animation CSS
 
 const WordPressTechSection = () => {
     return (
@@ -8,12 +9,12 @@ const WordPressTechSection = () => {
             <div className="container">
                 <div className="row align-items-center">
 
-                    {/* Left Image */}
+                    {/* Left Image with Animation */}
                     <div className="col-12 col-lg-4 text-center mb-4 mb-lg-0">
                         <img
                             src={womanLaptop}
                             alt="Woman with Laptop"
-                            className="img-fluid"
+                            className="img-fluid womanLaptopAnim"
                             style={{ maxHeight: "550px" }}
                         />
                     </div>
