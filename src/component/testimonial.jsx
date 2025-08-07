@@ -44,47 +44,68 @@ const Testimonial = () => {
   }, [index]);
 
   return (
-    <div className="container py-2 ">
-      <div className="row align-items-center bg-white p-4 rounded shadow testimonial-card">
-        
+    <div className="container py-2">
+      <div
+        className="row align-items-center bg-white p-4 rounded shadow testimonial-card"
+        data-aos="fade-up"
+      >
         {/* Left Section */}
-        <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
+        <div className="col-lg-7 col-md-12 mb-4 mb-lg-0" data-aos="fade-right">
           <div className="row g-3">
-            
             {/* Text & Buttons */}
             <div className="col-12 col-md-5 d-flex flex-column justify-content-between">
-              <div>
+              <div data-aos="fade-down" data-aos-delay="100">
                 <p className="mb-2 fs-6 fs-md-5">
-                  <span className="d-inline-block rounded-circle me-2"
+                  <span
+                    className="d-inline-block rounded-circle me-2"
                     style={{
                       width: "10px",
                       height: "10px",
-                      backgroundColor: "#B6ED55"
+                      backgroundColor: "#B6ED55",
                     }}
                   ></span>
                   <strong>Testimonials</strong>
                 </p>
-                <h2 className="fw-bold mb-4 mt-3 fs-3 fs-md-2">Listen To What They Say.</h2>
+                <h2 className="fw-bold mb-4 mt-3 fs-3 fs-md-2">
+                  Listen To What They Say.
+                </h2>
               </div>
 
-              <div className="d-flex align-items-center flex-wrap gap-2 mt-3">
-                <button className="btn btn-outline-dark" onClick={prevSlide}>❮</button>
-                <button className="btn btn-outline-dark" onClick={nextSlide}>❯</button>
+              <div
+                className="d-flex align-items-center flex-wrap gap-2 mt-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <button className="btn btn-outline-dark" onClick={prevSlide}>
+                  ❮
+                </button>
+                <button className="btn btn-outline-dark" onClick={nextSlide}>
+                  ❯
+                </button>
                 {testimonials.map((t, i) => (
                   <img
                     key={i}
                     src={t.image}
                     alt={`thumb-${i}`}
                     onClick={() => setIndex(i)}
-                    className={`rounded-circle border ${i === index ? "border-dark" : "border-secondary"}`}
-                    style={{ width: "45px", height: "45px", cursor: "pointer" }}
+                    className={`rounded-circle border ${i === index ? "border-dark" : "border-secondary"
+                      }`}
+                    style={{
+                      width: "45px",
+                      height: "45px",
+                      cursor: "pointer",
+                    }}
                   />
                 ))}
               </div>
             </div>
 
             {/* Main Image */}
-            <div className="col-12 col-md-6 text-center">
+            <div
+              className="col-12 col-md-6 text-center"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <img
                 src={testimonials[index].image}
                 alt={testimonials[index].name}
@@ -95,13 +116,20 @@ const Testimonial = () => {
         </div>
 
         {/* Right Section */}
-        <div className="col-lg-5 col-md-12 text-center text-lg-start">
-          <p className="mb-4 fs-6 fs-md-5">❝ {testimonials[index].text} ❞</p>
+        <div
+          className="col-lg-5 col-md-12 text-center text-lg-start"
+          data-aos="fade-left"
+          data-aos-delay="400"
+        >
+          <p className="mb-4 fs-6 fs-md-5">
+            ❝ {testimonials[index].text} ❞
+          </p>
           <h6 className="fw-bold mb-0 fs-6 fs-md-5">{testimonials[index].name}</h6>
           <p className="text-muted fs-6 fs-md-5">{testimonials[index].role}</p>
         </div>
       </div>
     </div>
+
   );
 };
 

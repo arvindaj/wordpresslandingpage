@@ -80,7 +80,7 @@ const WordPressSection = () => {
                         </p>
 
                         <button
-                            className="btn fw-semibold px-4 py-2 rounded-pill shadow-sm"
+                            className="btn fw-semibold px-4 py-2 rounded-pill shadow-sm ctabutton"
                             style={{
                                 background: "linear-gradient(to right, #333, #666)",
                                 color: "#fff",

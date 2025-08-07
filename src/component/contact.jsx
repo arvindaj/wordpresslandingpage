@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/css/contact.css"; // Import our small responsive CSS
+import "../assets/css/contact.css";
 
 const ContactCard = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="container my-5">
+    <div className="container my-5 p-lg-0 p-4">
       <div
         className="row g-4 rounded-4 p-4 overflow-hidden align-items-center"
         style={{
@@ -13,7 +22,10 @@ const ContactCard = () => {
         }}
       >
         {/* Left Section */}
-        <div className="col-12 col-lg-7 text-white">
+        <div
+          className="col-12 col-lg-7 text-white"
+          data-aos="fade-right"
+        >
           <button className="bg-white rounded-pill mb-4 px-4 py-2 d-flex align-items-center gap-2">
             <span
               style={{
@@ -39,7 +51,10 @@ const ContactCard = () => {
         </div>
 
         {/* Right Section - Form */}
-        <div className="col-12 col-lg-5">
+        <div
+          className="col-12 col-lg-5"
+          data-aos="fade-left"
+        >
           <div
             className="bg-white p-4 rounded-4 shadow contact-form"
             style={{ maxWidth: "400px", margin: "0 auto" }}

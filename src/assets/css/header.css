@@ -35,3 +35,19 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+.ctabutton {
+  background-color: #161718;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.ctabutton:hover {
+  background-color: #8FDC24 !important;
+  color: #8FDC24 !important;
+  transform: translateY(-3px);
+}
+
+.ctabutton:hover .send-icon {
+  transform: rotate(90deg);
+}

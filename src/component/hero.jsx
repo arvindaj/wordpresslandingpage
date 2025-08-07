@@ -8,7 +8,23 @@ import womanhero from '../assets/img/girltoplook 1.png'
 import '../assets/css/herosection.css'
 import sendgreen from '../assets/img/sendgreen.png'
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const HeroSection = () => {
+
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+
+
+
     return (
         <section className="hero-section position-relative overflow-hidden mt-0 mb-5">
             {/* Background geometric shapes with floating animation */}
