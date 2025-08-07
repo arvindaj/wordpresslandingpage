@@ -5,7 +5,7 @@ import '../assets/css/header.css';
 
 const Headersection = () => {
     return (
-        <header className="header py-3 border-bottom border-dark border-mobile-hide">
+        <header className="header py-3 border-bottom border-dark border-mobile-hide mb-md-4">
 
             <div className="container-fluid">
                 <div className="row align-items-center">

@@ -51,7 +51,7 @@ const HeroSection = () => {
                 animation: 'floatUpDown 8s ease-in-out infinite reverse'
             }}></div>
 
-            <div className="container-fluid h-100 col-lg-10 mb-5">
+            <div className="container-fluid col-lg-10 mb-5">
                 <div className="row align-items-center h-100">
                     {/* Left Side - Content with slide-in animation */}
                     <div className="col-lg-5 col-md-6 order-2 order-md-1 px-4 px-lg-5">
@@ -61,7 +61,7 @@ const HeroSection = () => {
                             {/* Green Badge with pulse animation */}
                             <div className="mb-4 text-center text-md-start mx-0 mt-lg-4">
                                 <span className="green-badge animate-pulse-in">
-                                    Make Your Business Idea
+                                    Make Your Business
                                 </span>
                             </div>
 

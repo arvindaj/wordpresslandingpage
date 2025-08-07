@@ -106,7 +106,7 @@ const WordPressTechSection = () => {
                                         className="mb-4"
                                         style={{
                                             cursor: "pointer",
-                                            backgroundColor: activeTech === tech ? "#2c2c2c" : "transparent",
+                                            backgroundColor: activeTech === tech ? "#4b4949ff" : "transparent",
                                             padding: "10px",
                                             borderRadius: "10px",
                                             transition: "all 0.3s ease",

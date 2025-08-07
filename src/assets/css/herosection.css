@@ -538,9 +538,8 @@
 
 /* 📱 Small mobile screens */
 @media (max-width: 576px) {
-    .womanpic {
-        width: 70%;
-        scale: 1;
+  .womanpic {
+        display: none !important;
     }
 
     .hero-section .display-1 {
