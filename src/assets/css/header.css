@@ -27,6 +27,57 @@
   bottom: -40px;
 }
 
+ .contact-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    font-size: 0.95rem;
+  }
+
+.mobile-slider-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.contact-slider {
+    display: inline-flex;
+    gap: 16px;
+    animation: scroll-left 15s linear infinite;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.contact-slide {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+    flex: 0 0 auto;
+}
+
+.contact-slide .flag-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 6px;
+}
+
 /* Green dot inside Growth button */
 .growth-btn .dot {
   width: 10px;
@@ -50,4 +101,24 @@
 
 .ctabutton:hover .send-icon {
   transform: rotate(90deg);
+}
+
+
+
+@media (max-width: 991.98px) {
+    .header {
+        background-color: #fff;
+        position: relative;
+        z-index: 1020;
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+
+.border-mobile-hide {
+        border-bottom: none !important;
+    }
 }

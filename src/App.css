@@ -5,3 +5,9 @@ h1, h2, h3, h4, h5, h6 {
 body, p, span, li {
   font-family: 'Libre Franklin', sans-serif;
 }
+
+
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+}

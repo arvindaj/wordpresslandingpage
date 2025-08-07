@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import background from '../assets/img/wordpressbg.png'
 import r1 from '../assets/img/r1.png'
@@ -39,7 +38,7 @@ const HeroSection = () => {
                 opacity: '0.7',
                 animation: 'floatUpDown 6s ease-in-out infinite'
             }}></div>
-            
+
             <div className="position-absolute floating-bg-2" style={{
                 top: '5%',
                 right: '-10%',
@@ -59,46 +58,36 @@ const HeroSection = () => {
                         <div className="hero-content mx-5 px-0" style={{
                             animation: 'slideInLeft 1s ease-out'
                         }}>
-                            {/* Green Badge with pulse animation */} 
-                            <div className="mb-4 text-center text-md-start">
-                                <span
-                                    className="px-4 py-2 fw-semibold d-inline-block"
-                                    style={{
-                                        background: "linear-gradient(90deg, #8FDC24 0%, #A3FF1E 100%)",
-                                        borderRadius: "25px",
-                                        fontSize: "18px",
-                                        color: "#161718",
-                                        whiteSpace: "nowrap",
-                                        animation: 'pulse 2s ease-in-out infinite, fadeInDown 1s ease-out 0.3s both'
-                                    }}
-                                >
+                            {/* Green Badge with pulse animation */}
+                            <div className="mb-4 text-center text-md-start mx-0 mt-lg-4">
+                                <span className="green-badge animate-pulse-in">
                                     Make Your Business Idea
                                 </span>
                             </div>
 
                             {/* Main Heading with typewriter effect */}
-                            <h1 className="display-1 fw-bold mb-4" style={{ 
+                            <h1 className="display-1 fw-bold mb-4" style={{
                                 lineHeight: '1.2',
                                 animation: 'fadeInUp 1s ease-out 0.5s both'
                             }}>
-                                <span style={{ 
+                                <span style={{
                                     color: '#161718ff',
                                     animation: 'colorShift 3s ease-in-out infinite'
                                 }}>Creative</span>
                             </h1>
-                            
+
                             <h2 style={{
                                 animation: 'fadeInUp 1s ease-out 0.7s both'
                             }}>
                                 <span style={{ color: '#666' }}>Never End In </span>
-                                <span style={{ 
+                                <span style={{
                                     color: '#8FDC24',
                                     animation: 'glow 2s ease-in-out infinite alternate'
                                 }}>WordPress</span>
                                 <br />
                                 <span style={{ color: '#666' }}>Website Development</span>
                             </h2>
-                            
+
                             {/* Recognition Section with stagger animation */}
                             <div className="col-12 col-lg-12 mt-4" style={{
                                 animation: 'fadeInUp 1s ease-out 0.9s both'
@@ -108,21 +97,21 @@ const HeroSection = () => {
                                 </h5>
 
                                 <div className="col-lg-12 text-center">
-                                    <img src={r1} alt="R1" className="img-fluid recognition-logo" 
-                                         style={{ 
-                                             maxHeight: '35px',
-                                             animation: 'bounceIn 1s ease-out 1.1s both'
-                                         }} />
-                                    <img src={r2} alt="R2" className="img-fluid recognition-logo" 
-                                         style={{ 
-                                             maxHeight: '40px',
-                                             animation: 'bounceIn 1s ease-out 1.3s both'
-                                         }} />
-                                    <img src={r3} alt="R3" className="img-fluid recognition-logo" 
-                                         style={{ 
-                                             maxHeight: '40px',
-                                             animation: 'bounceIn 1s ease-out 1.5s both'
-                                         }} />
+                                    <img src={r1} alt="R1" className="img-fluid recognition-logo"
+                                        style={{
+                                            maxHeight: '35px',
+                                            animation: 'bounceIn 1s ease-out 1.1s both'
+                                        }} />
+                                    <img src={r2} alt="R2" className="img-fluid recognition-logo"
+                                        style={{
+                                            maxHeight: '40px',
+                                            animation: 'bounceIn 1s ease-out 1.3s both'
+                                        }} />
+                                    <img src={r3} alt="R3" className="img-fluid recognition-logo"
+                                        style={{
+                                            maxHeight: '40px',
+                                            animation: 'bounceIn 1s ease-out 1.5s both'
+                                        }} />
                                 </div>
                             </div>
                         </div>
@@ -138,10 +127,10 @@ const HeroSection = () => {
                                     src={womanhero}
                                     alt="womanhero"
                                     className="me-0 womanpic woman-hero-img"
-                                    style={{ 
-                                        transform: 'rotate(15deg)',
+                                    style={{
+                                        // transform: 'rotate(15deg)',
                                         transition: 'all 0.3s ease',
-                                        animation: 'gentleRotate 10s linear infinite'
+
                                     }}
                                 />
                             </div>
@@ -149,12 +138,12 @@ const HeroSection = () => {
                     </div>
 
                     {/* Right Side - Call to Action with slide-in animation */}
-                    <div className="col-lg-4 col-md-12 order-3 px-4 px-lg-5 mt-5 postion-relative">
-                        <div className="cta-section mt-5" style={{
+                    <div className="col-lg-4 col-md-12 order-3 px-4 px-lg-5 mt-3 postion-relative">
+                        <div className="cta-section mt-lg-5" style={{
                             animation: 'slideInRight 1s ease-out 0.4s both'
                         }}>
                             {/* Green Badge */}
-                            <div className="mb-4 mt-5">
+                            <div className="mb-4 mt-lg-5">
                                 <span className="badge1 px-3 py-2 text-dark fw-semibold" style={{
                                     borderRadius: '20px',
                                     fontSize: '13px',
@@ -165,7 +154,7 @@ const HeroSection = () => {
                             </div>
 
                             {/* CTA Heading with bounce effect */}
-                            <h2 className="display-1 fw-bold mb-4" style={{ 
+                            <h2 className="display-1 fw-bold mb-4" style={{
                                 color: '#0a0a0aff',
                                 animation: 'bounceInUp 1s ease-out 1s both'
                             }}>
@@ -176,7 +165,7 @@ const HeroSection = () => {
                                 animation: 'fadeInUp 1s ease-out 1.2s both'
                             }}>
                                 <span style={{ color: '#666' }}>WordPress </span>
-                                <span style={{ 
+                                <span style={{
                                     color: '#8FDC24',
                                     animation: 'textGlow 2s ease-in-out infinite alternate'
                                 }}>Development</span>
@@ -185,8 +174,8 @@ const HeroSection = () => {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-muted mb-4" style={{ 
-                                fontSize: '14px', 
+                            <p className="text-muted mb-4" style={{
+                                fontSize: '14px',
                                 lineHeight: '1.6',
                                 animation: 'fadeIn 1s ease-out 1.4s both'
                             }}>
@@ -194,7 +183,7 @@ const HeroSection = () => {
                             </p>
 
                             {/* CTA Button with hover animations */}
-                            <button className="btn text-white px-4 py-1 rounded-pill fw-semibold d-flex align-items-center gap-2 ctabutton cta-button-animated" style={{
+                            <button className="btn px-4 py-1 rounded-pill fw-semibold d-flex align-items-center gap-2 ctabutton" style={{
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -211,7 +200,7 @@ const HeroSection = () => {
                                         height: '40px',
                                         borderRadius: '50%',
                                         transition: 'transform 0.3s ease',
-                                        animation: 'rotate360 3s linear infinite'
+
                                     }} />
                                 </div>
                             </button>
@@ -220,7 +209,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            
+
         </section>
     );
 };

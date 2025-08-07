@@ -37,14 +37,14 @@ const WordPressTechSection = () => {
 
                     {/* Left Image */}
                     <div
-                        className="col-12 col-lg-4 text-center mb-4 mb-lg-0"
+                        className="col-12 col-lg-4 text-center mb-0 mb-lg-0"
                         data-aos="fade-right"
                     >
                         <img
                             src={womanLaptop}
                             alt="Woman with Laptop"
-                            className="img-fluid womanLaptopAnim"
-                            style={{ maxHeight: "550px" }}
+                            className="img-fluid womanLaptopAnim mt-3"
+                            style={{ maxHeight: "520px" }}
                         />
                     </div>
 
