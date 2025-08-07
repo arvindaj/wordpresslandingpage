@@ -17,7 +17,7 @@ const WordPressAgency = () => {
     }, []);
 
     return (
-        <section className="py-0 pb-0 mx-3">
+        <section className="py-2 pb-0 mx-3">
             <div className="container">
                 <div className="row align-items-center">
                     {/* Left Content */}

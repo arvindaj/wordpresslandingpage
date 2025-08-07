@@ -6,7 +6,7 @@ import '../assets/css/wordpresssection.css'
 
 const WordPressSection = () => {
     return (
-        <section className="py-5">
+        <section className="py-2">
             <div className="container">
                 <div className="row align-items-center">
 
