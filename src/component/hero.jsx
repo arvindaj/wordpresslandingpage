@@ -79,13 +79,14 @@ const HeroSection = () => {
                             <h2 style={{
                                 animation: 'fadeInUp 1s ease-out 0.7s both'
                             }}>
-                                <span style={{ color: '#666' }}>Never End In </span>
+                                <span style={{ color: '#666' }}>Customized Scalable and </span>
                                 <span style={{
                                     color: '#8FDC24',
                                     animation: 'glow 2s ease-in-out infinite alternate'
-                                }}>WordPress</span>
+                                }}>Secure</span>
                                 <br />
-                                <span style={{ color: '#666' }}>Website Development</span>
+                                <span style={{ color: '#666' }}>– coded by WordPress
+                                </span>
                             </h2>
 
                             {/* Recognition Section with stagger animation */}
@@ -143,14 +144,21 @@ const HeroSection = () => {
                             animation: 'slideInRight 1s ease-out 0.4s both'
                         }}>
                             {/* Green Badge */}
-                            <div className="mb-4 mt-lg-5">
-                                <span className="badge1 px-3 py-2 text-dark fw-semibold" style={{
-                                    borderRadius: '20px',
-                                    fontSize: '13px',
-                                    animation: 'fadeInDown 1s ease-out 0.8s both'
-                                }}>
-                                    Find The Best Solution
-                                </span>
+                            <div className="mb-2 mt-lg-5">
+                                <span
+                            className="d-inline-flex align-items-center px-3 py-1 mb-3 rounded-pill"
+                            style={{ backgroundColor: "#f2f2f2", fontSize: "14px" }}
+                        >
+                            <span
+                                className="me-2 d-inline-block rounded-circle"
+                                style={{
+                                    width: "10px",
+                                    height: "10px",
+                                    backgroundColor: "#8BC34A",
+                                }}
+                            ></span>
+                        Find Your Advantage
+                        </span>
                             </div>
 
                             {/* CTA Heading with bounce effect */}
@@ -158,7 +166,7 @@ const HeroSection = () => {
                                 color: '#0a0a0aff',
                                 animation: 'bounceInUp 1s ease-out 1s both'
                             }}>
-                                Go on !
+                                Solutions Awaits
                             </h2>
 
                             <h3 className="h4 mb-3" style={{
@@ -168,9 +176,9 @@ const HeroSection = () => {
                                 <span style={{
                                     color: '#8FDC24',
                                     animation: 'textGlow 2s ease-in-out infinite alternate'
-                                }}>Development</span>
+                                }}>Clean</span>
                                 <br />
-                                <span style={{ color: '#666' }}>Service Company</span>
+                                <span style={{ color: '#666' }}>Service Fast. Functional.</span>
                             </h3>
 
                             {/* Description */}
@@ -179,7 +187,8 @@ const HeroSection = () => {
                                 lineHeight: '1.6',
                                 animation: 'fadeIn 1s ease-out 1.4s both'
                             }}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Unlock customized WordPress solutions that give your brand growth. Whether you are a startup, scale, or enterprise, our builds are built for performance, ui/ux and conversions – and are all built by best practices in the industry.
+
                             </p>
 
                             {/* CTA Button with hover animations */}

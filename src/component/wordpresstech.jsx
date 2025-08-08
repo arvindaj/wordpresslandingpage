@@ -6,7 +6,7 @@ import womanLaptop from "../assets/img/woman-laptop.png";
 import "../assets/css/wordpresstechsection.css";
 
 const WordPressTechSection = () => {
-    const [activeTech, setActiveTech] = useState("AI/ML");
+    const [activeTech, setActiveTech] = useState("Gutenberg Blokes");
 
     useEffect(() => {
         AOS.init({
@@ -16,15 +16,15 @@ const WordPressTechSection = () => {
     }, []);
 
     const techContent = {
-        "AI/ML": {
+        "Gutenberg Blokes": {
             para1: "AI and ML help automate complex processes and create intelligent user experiences.",
             para2: "We integrate ML models with WordPress to personalize content, optimize performance, and improve decision-making.",
         },
-        "Computer Vision": {
+        "WooCommerce Integration": {
             para1: "Computer vision enables systems to extract meaningful information from images or videos.",
             para2: "We use CV techniques in WordPress for image recognition, moderation, and AR-based content.",
         },
-        "Cloud Computing": {
+        "API-First Approach": {
             para1: "Cloud computing enhances scalability, availability, and performance.",
             para2: "We deploy WordPress on cloud platforms like AWS and GCP to ensure speed and reliability.",
         },
@@ -64,11 +64,11 @@ const WordPressTechSection = () => {
                                     borderRadius: "50%",
                                 }}
                             ></span>
-                            Optimizing User Experience Across Devices
+                           WordPress Tools
                         </div>
 
                         <h1 className="fw-bold mb-4 mx-3">
-                            Technologies we use for WordPress web development
+                            Technologies to drive up-to-date WordPress solutions
                         </h1>
 
                         <div className="row g-4">

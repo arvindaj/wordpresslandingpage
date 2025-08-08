@@ -33,22 +33,18 @@ const WordPressBenefits = () => {
                 style={{
                   width: "10px",
                   height: "10px",
-                  backgroundColor: "green",
+                  backgroundColor: "8BC34A",
                 }}
               ></span>
               Get One Challenge
             </span>
 
-            <h3 className="fw-bold mb-3">Benefits of WordPress Development</h3>
+            <h3 className="fw-bold mb-3">Performance in each Line</h3>
             <p className="text-muted">
-              WordPress changed the digital landscape on its axis by empowering professionals 
-              as well as amateurs to build blogs and websites on their own. There is more to it 
-              than user-friendliness.
+              We do not sell one size fits all WordPress. All lines of codes are functional in such a way that each is optimized, modular and scalable. Custom themes, smartly powered plugins and high performing back-end systems - we deliver performance by default.
             </p>
             <p className="text-muted">
-              WordPress changed the digital landscape on its axis by empowering professionals 
-              as well as amateurs to build blogs and websites on their own. There is more to it 
-              than user-friendliness.
+             We are full-stack all the way, i.e., we have eCommerce as well as enterprise CMS. Developing and growing your brand online, we ensure your site is at scale; secure, smooth and zippy fast as the best WordPress development company in Coimbatore.
             </p>
 
             <button

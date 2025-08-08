@@ -39,21 +39,19 @@ const WordPressAgency = () => {
 
                         {/* Heading */}
                         <h1 className="fw-bold display-6 display-md-5 mb-3">
-                            WordPress Development Agency
+                            Speed. Scale. Stability.
                         </h1>
                        <p className="text-muted mb-4" data-aos="fade-up" data-aos-delay="100">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            We aren’t just a WordPress site builder; we are digital engine builders at Pavalsoft. Every page is developed with a strong emphasis on speed, scale, and cross-platform performance testing. Your users won’t just come and go, they will stick around
                         </p>
 
                         <p className="text-muted mb-4" data-aos="fade-up" data-aos-delay="100">
-                            Our team of talented WordPress developers is not just skilled professionals; they
-                            are dedicated experts who go beyond coding.
+                            Our performance strategy and practices incorporate everything from server-side optimizations to frontend asset compression to ensure lightning fast loading times and low bounce rates. When we build, caching is improved, CDN is unified, lazy loading is implemented, and, globally by default we improve the Core Web Vitals.
+.
                         </p>
 
                        <p className="text-muted mb-4" data-aos="fade-up" data-aos-delay="100">
-                            With a deep knowledge of WordPress, our developers deliver customized solutions
-                            that cater to your specific needs.
+                            As the leading WordPress development firm in Coimbatore, our engineered solutions are intentionally designed to scale with your traffic, feature set and business requirements. When we develop a fast WordPress site, it is fast whether you host huge users.
                         </p>
 
                      <p className="text-muted mb-4" data-aos="fade-up" data-aos-delay="100">

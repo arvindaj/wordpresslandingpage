@@ -18,20 +18,30 @@ const WordPressService = () => {
     }, []);
 
     return (
-        <section className="py-2">
+        <section className="py-4">
             <div className="container">
                 <div className="row align-items-center col-lg-12">
                     {/* Left Section */}
                     <div className="col-lg-6 col-md-12 mb-4 mb-lg-0" data-aos="fade-right">
-                        <span className="badgeservice bg-light text-dark px-3 py-2 mb-5 mx-4 shadow-sm rounded-pill">
-                            <span className="me-2  bg-light rounded-circle d-inline-block " style={{ width: "10px", height: "10px" }}></span>
-                            Digital Landscape
+                        <span
+                            className="d-inline-flex align-items-center px-3 py-1 mb-2 rounded-pill"
+                            style={{ backgroundColor: "#f2f2f2", fontSize: "14px" }}
+                        >
+                            <span
+                                className="me-2 d-inline-block rounded-circle"
+                                style={{
+                                    width: "10px",
+                                    height: "10px",
+                                    backgroundColor: "#8BC34A",
+                                }}
+                            ></span>
+                           Dominate Digital!
                         </span>
 
-                        <h1 className="fw-bold mb-3 py-4 display-5 mx-4">WordPress Development Services</h1>
+                        <h1 className="fw-bold mb-2 py-4 display-5 mx-4">WordPress Development Services</h1>
                         <p className="text-muted mb-4 mx-4">
-                            Discover our growing range of WordPress web development services that aim to empower businesses
-                            with a custom-built and unique website.
+                            Pavalsoft helps brands to unlock digital excellence with WordPress. We code every pixel intentionally for branding excellence, whether you're trace the brand among your existing sites, or are you starting something new!
+
                         </p>
 
                         {/* Rating & Stats */}
@@ -49,7 +59,7 @@ const WordPressService = () => {
                             </div>
                             <div>
                                 <h6 className="mb-0 fw-bold mx-4 mx-lg-0">125K+</h6>
-                                <small className="text-muted mx-4">Success Probability</small>
+                                <small className="text-muted mx-1">Success Probability</small>
                             </div>
                             <div>
                                 <h6 className="mb-0 fw-bold mx-4">9.99%</h6>
@@ -62,25 +72,25 @@ const WordPressService = () => {
                     <div className="col-lg-6 col-md-12" data-aos="fade-left">
                         <div className="p-4 text-white rounded-4 shadow" style={{ backgroundColor: '#514E4E' }}>
                             <div className="mb-4" data-aos="fade-up" data-aos-delay="100">
-                                <h6 className="fw-bold fs-5">WordPress Theme Development</h6>
+                                <h6 className="fw-bold fs-5">Experience that Converts</h6>
                                 <p className="text-light small mb-0">
-                                    Build WordPress themes to amplify the look and feel of your website,
-                                    standardize web pages or for marketplace selling.
+                                    From default "landing pages" to advanced "portals" - we can design the flows that engage the interactive experience to convert users.
                                 </p>
                             </div>
 
                             <div className="mb-4" data-aos="fade-up" data-aos-delay="200">
-                                <h6 className="fw-bold fs-5">WordPress Migration Services</h6>
+                                <h6 className="fw-bold fs-5">Speed with Security
+</h6>
                                 <p className="text-light small mb-0">
-                                    Migrate from other CMS platforms to the awesomeness of WordPress with our expertise.
+                                  Fast loaded, Modules fortified, WordPress builds that you will never ever sacrifice speed for security. 
+
                                 </p>
                             </div>
 
                             <div data-aos="fade-up" data-aos-delay="300">
-                                <h6 className="fw-bold fs-5">WordPress API Integration</h6>
+                                <h6 className="fw-bold fs-5">Future Ready Framework</h6>
                                 <p className="text-light small mb-0">
-                                    Integrate your WordPress applications and web services with other applications
-                                    with API integration.
+                                    Future ready detailed developed scalable WordPress architectures that are practical for the problems of tomorrow.
                                 </p>
                             </div>
                         </div>

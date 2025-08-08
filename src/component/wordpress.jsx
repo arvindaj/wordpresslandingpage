@@ -50,33 +50,32 @@ const WordPressSection = () => {
                     {/* Right Content */}
                     <div className="col-lg-6 col-md-6 col-12 text-center text-md-start px-lg-5">
                         <div className="mb-3">
+                           <span
+                            className="d-inline-flex align-items-center px-3 py-1 mb-3 rounded-pill"
+                            style={{ backgroundColor: "#f2f2f2", fontSize: "14px" }}
+                        >
                             <span
-                                className="px-4 py-1 rounded-pill fw-semibold"
+                                className="me-2 d-inline-block rounded-circle"
                                 style={{
-                                    backgroundColor: "#f4f4f4",
-                                    color: "#333",
-                                    fontSize: "14px",
+                                    width: "10px",
+                                    height: "10px",
+                                    backgroundColor: "#8BC34A",
                                 }}
-                            >
-                                What Makes
-                            </span>
+                            ></span>
+                        Why Pavalsoft?
+                        </span>
+                            
                         </div>
 
-                        <h2 className="fw-bold mb-3">WordPress awesome?</h2>
+                        <h2 className="fw-bold mb-3">Built for Change</h2>
                         <p className="text-muted mb-3">
-                            An easy-to-use content management system that requires no prior
-                            training or technical expertise.
+                            We build aesthetically beautiful designs with hard hitting backend logic. Every WordPress site we build takes full advantage of best practices and is fully optimized, responsive, and SEO friendly.
                         </p>
                         <p className="text-muted mb-3">
-                            WordPress has built-in SEO parameters that make websites SEO
-                            friendly. Additional plugins can also be used to extend the
-                            SEO-friendliness of the website.
+                           With our agile development approach, you will have it more quickly, you can iterate continuously, and you can work in an iterative, collaborative, and transparent way through every phase.
                         </p>
                         <p className="text-muted mb-4">
-                            Sturdy performance that is{" "}
-                            <strong>unabated by the number of pages</strong>, application
-                            or traffic. There is a reason why one-fourth of the internet
-                            uses WordPress.
+                            Our professional WordPress development team in Coimbatore, India is the most reliable for delivering business-ready solutions, and not just another website.
                         </p>
 
                         <button
