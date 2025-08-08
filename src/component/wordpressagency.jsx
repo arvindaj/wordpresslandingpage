@@ -64,8 +64,8 @@ const WordPressAgency = () => {
                             <div className="me-2 btn border-black p-2">
                                 <FaArrowRight className="fs-5" style={{ transform: "rotate(-25deg)" }} />
                             </div>
-                            <p className="mb-0 fw-semibold mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                Share your idea, and we'll bring it to life with WordPress.
+                            <p className="mb-0 fw-semibold mt-0 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                All of our builds are highly performant according to Google's performance metrics.
                             </p>
                         </div>
 
@@ -73,8 +73,8 @@ const WordPressAgency = () => {
                             <div className="me-2 btn border-black p-2">
                                 <FaArrowRight className="fs-5" style={{ transform: "rotate(-25deg)" }} />
                             </div>
-                            <p className="mb-0 fw-semibold mt-2">
-                                Our expertise ensures a rapid, well‑designed, and fully functional website.
+                            <p className="mb-0 fw-semibold mt-0">
+                                Technologies not just integrated, but enhanced and optimized, ensuring the best quality, speed and experience.
                             </p>
                         </div>
 

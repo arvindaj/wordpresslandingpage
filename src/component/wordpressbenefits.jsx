@@ -33,7 +33,7 @@ const WordPressBenefits = () => {
                 style={{
                   width: "10px",
                   height: "10px",
-                  backgroundColor: "8BC34A",
+                  backgroundColor: "#8BC34A",
                 }}
               ></span>
               Get One Challenge

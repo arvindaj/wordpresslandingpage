@@ -9,19 +9,19 @@ const testimonials = [
   {
     name: "James R",
     role: "Owner, Bloom & Co.",
-    text: "The team at [Your Agency Name] transformed our social media presence. In just three months, our engagement doubled, and sales from Instagram increased by 40%. They truly understand the art of digital marketing!",
+    text: "We did have a complex WordPress need and Pavalsoft killed it.Suresh Nair is an eCommerce entrepreneur.",
     image: test1,
   },
   {
     name: "Anna L",
     role: "Marketing Lead, Nova",
-    text: "Absolutely amazing results. We were struggling with growth and they helped us scale up quickly with a strong digital plan.",
+    text: "It took them very little time to provide a bespoke solution and it is very fast! Priya R., Marketing director, SaaS Startup",
     image: test2,
   },
   {
     name: "John M",
     role: "CEO, Startup Hub",
-    text: "Professional and effective. They handled our campaigns and we saw real, measurable improvements.",
+    text: "WordPress development company Coimbatore. Very highly recommended. Founder, EdTech Platform",
     image: test3,
   },
 ];

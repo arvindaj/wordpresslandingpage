@@ -26,8 +26,8 @@ const ExploreCard = () => {
         data-aos="fade-up" // Animation here
       >
         <h5 className="fw-bold mb-4" data-aos="fade-down" data-aos-delay="200">
-          Ready to transform? We specialize in delivering web design and
-          development solutions that drive growth and success.
+          Ready to Launch a Lightning-Fast WordPress Site That Performs Everywhere and Build speed-driven WordPress solutions
+
         </h5>
         <button
           className="btn px-4 py-2 explore-btn"

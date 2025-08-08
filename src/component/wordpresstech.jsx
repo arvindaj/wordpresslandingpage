@@ -17,16 +17,16 @@ const WordPressTechSection = () => {
 
     const techContent = {
         "Gutenberg Blokes": {
-            para1: "AI and ML help automate complex processes and create intelligent user experiences.",
-            para2: "We integrate ML models with WordPress to personalize content, optimize performance, and improve decision-making.",
+            para1: "We develop customized Gutenberg blocks to ensure easy flexible and super intuitive editing of websites. Using drag-and-drop interface using simple to code interfaces, have interesting layouts with no coding involved.",
+            para2: "These responsive blocks are also SEO friendly and customizable to be similar to your brand style, so that you have full power over the design and functionality of your site.",
         },
         "WooCommerce Integration": {
-            para1: "Computer vision enables systems to extract meaningful information from images or videos.",
-            para2: "We use CV techniques in WordPress for image recognition, moderation, and AR-based content.",
+            para1: "We provide conversion-friendly, secure, scalable and seamless WooCommerce integrations. Whether it is a product listing or checking out, all the effects are made to boost the user experience and convert the sale.",
+            para2: "From a small shop to thousands of SK us, we have our setups in place with WooCommerce that are stable, performative and flexible to cater your growing shop.",
         },
         "API-First Approach": {
-            para1: "Cloud computing enhances scalability, availability, and performance.",
-            para2: "We deploy WordPress on cloud platforms like AWS and GCP to ensure speed and reliability.",
+            para1: "We develop systems that are graceful and effective to work with any platform using API-first approach. This is to guarantee rapid integration, a smoother data flow and scale-up of your business.",
+            para2: "Our API solutions enable you to integrate with third-party tools, CRMs, and custom apps so you can continue to grow your capabilities and increase your performance not reducing the safety.",
         },
     };
 
