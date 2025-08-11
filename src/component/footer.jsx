@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../assets/css/footer.css'
 
 const Footer = () => {
   return (
@@ -7,7 +8,11 @@ const Footer = () => {
       <div className="container">
         {/* Contact Info */}
         <div className="row text-center text-md-start mb-4">
-          <div className="col-12 col-sm-6 col-md-3 mb-3">
+          
+
+          <div className="row address-section">
+            {/* India */}
+            <div className="col-12 col-sm-6 col-md-3 mb-3">
             <p className="mb-1">📧 Mail</p>
             <a
               href="mailto:info@pavalsoftware.com"
@@ -17,29 +22,52 @@ const Footer = () => {
               info@pavalsoftware.com
             </a>
           </div>
+            <div className="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-start">
+              <img
+                src="https://flagcdn.com/w20/in.png"
+                alt="India Flag"
+                className="flag-icon"
+              />
+              <div>
+                <p className="mb-1">
+                  53-2, Second Floor, 3rd Cross, MKP Colony Main St, Ganapathy, Coimbatore-641012
+                </p>
+                <span className="phone-number">+91 6380750902</span>
+              </div>
+            </div>
 
-          <div className="col-12 col-sm-6 col-md-3 mb-3">
-            <p className="mb-1">
-              🇮🇳 53-2, Second Floor, 3rd Cross, MKP Colony Main St,
-              Ganapathy, Coimbatore-641012
-            </p>
-            <span style={{ color: "#8EC440" }}>+91 6380750902</span>
+            {/* UK */}
+            <div className="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-start">
+              <img
+                src="https://flagcdn.com/w20/gb.png"
+                alt="UK Flag"
+                className="flag-icon"
+              />
+              <div>
+                <p className="mb-1">
+                  47, Shaughnessy Way, Houlton, Rugby, CV23 1AU, United Kingdom
+                </p>
+                <span className="phone-number">+44 7402702107</span>
+              </div>
+            </div>
+
+            {/* Australia */}
+            <div className="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-start">
+              <img
+                src="https://flagcdn.com/w20/au.png"
+                alt="Australia Flag"
+                className="flag-icon"
+              />
+              <div>
+                <p className="mb-1">
+                  5/23, Langhorne St, Dandenong, VIC - 3175, Australia
+                </p>
+                <span className="phone-number">+61 449840901</span>
+              </div>
+            </div>
           </div>
 
-          <div className="col-12 col-sm-6 col-md-3 mb-3">
-            <p className="mb-1">
-              🇬🇧 47, Shaughnessy Way, Houlton, Rugby, CV23 1AU, United
-              Kingdom
-            </p>
-            <span style={{ color: "#8EC440" }}>+44 7402702107</span>
-          </div>
 
-          <div className="col-12 col-sm-6 col-md-3 mb-3">
-            <p className="mb-1">
-              🇦🇺 5/23, Langhorne St, Dandenong, VIC - 3175, Australia
-            </p>
-            <span style={{ color: "#8EC440" }}>+61 449840901</span>
-          </div>
         </div>
 
         {/* Heading with flex-grow-1 line */}

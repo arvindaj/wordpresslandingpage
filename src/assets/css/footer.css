@@ -1,0 +1,22 @@
+.address-section {
+  line-height: 1.4;
+}
+
+.flag-icon {
+  width: 28px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.phone-number {
+  color: #8EC440;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .flag-icon {
+    width: 22px;
+    margin-right: 8px;
+  }
+}
