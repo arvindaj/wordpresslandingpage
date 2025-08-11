@@ -15,7 +15,7 @@ const ExploreCard = () => {
   }, []);
 
   return (
-    <div className="container my-0 mt-0">
+    <div className="container my-0 mt-md-2 mt-lg-0">
       <div
         className="text-center text-white p-5 mx-auto"
         style={{

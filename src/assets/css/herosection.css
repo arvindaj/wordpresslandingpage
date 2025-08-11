@@ -260,16 +260,13 @@
 }
 
 .green-badge {
-    position: relative;
     display: inline-block;
     padding: 10px 24px;
     font-weight: 600;
     font-size: 18px;
     border-radius: 25px;
     color: #161718;
-    background: linear-gradient(90deg, #8FDC24 0%, #A3FF1E 100%);
-    white-space: nowrap;
-    transition: left 0.3s ease;
+    background: linear-gradient(90deg, #8FDC24, #9df81e);
 }
 
 
@@ -471,6 +468,11 @@
     .cta-section button {
         margin: 0 auto;
     }
+     .green-badge {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 /* 📱 Regular iPad (1024x768) - Landscape */
@@ -486,6 +488,11 @@
         width: 18%;
         left: 280px;
         bottom: 120px;
+    }
+     .green-badge {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 
@@ -534,11 +541,23 @@
     .hero-content {
         text-align: center;
     }
+    
+}
+
+
+
+/* Center on mobile only */
+@media (max-width: 767.98px) {
+    .green-badge {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 /* 📱 Small mobile screens */
 @media (max-width: 576px) {
-  .womanpic {
+    .womanpic {
         display: none !important;
     }
 
@@ -563,5 +582,5 @@
         left: -20px;
     }
 
-    
+
 }

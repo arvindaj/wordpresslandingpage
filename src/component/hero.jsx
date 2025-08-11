@@ -59,8 +59,8 @@ const HeroSection = () => {
                             animation: 'slideInLeft 1s ease-out'
                         }}>
                             {/* Green Badge with pulse animation */}
-                            <div className="mb-4 text-center text-md-start mx-0 mt-lg-4">
-                                <span className="green-badge animate-pulse-in">
+                            <div className="mb-4 text-md-start mx-0 mt-lg-4 ">
+                                <span className="green-badge animate-pulse-in ">
                                     Make Your Business
                                 </span>
                             </div>
